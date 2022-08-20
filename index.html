@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Review</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="modal.css">
+	<!--<script src="index.js" text="text/javascript"></script>-->
+	<script src="jquery-3.6.0.min.js" ></script>
+</head>
+<body>
+	<header><h3 class="h3">Resview</h3></header>
+	<nav class="navbar">
+		<a href="#"class="active">Home</a>
+		<a href="#">Douala</a>
+		<a href="#">Limbe</a>
+		<a href="#">Yaounde</a>
+		<a href="#">Bafoussam</a>
+		<a href="#">Bamenda</a>
+		<a href="#">Buea</a>
+	</nav>
+	<div class="main">
+		<div class="rest1">
+			<img src="HydrangeaS.jpg">
+			<div class="caption">
+			<div class="about name">Restaurant Info!!</div>
+			<div class="about location">Name: <span id="name1" class="name1">FOOT PRINT</span> </div>
+			<div class="about rating">Location: Buea this this that</div><!-- &#11088; for big star-->
+			<span>Rating: 4 stars <span class="stars" style="color: gold;">&starf;&starf;&starf;&starf;</span></span>
+			<div class="button"><button class="rate" type="submit" id="rest">Rate</button></div>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="rest1">
+			<img src="Hydrangeas.jpg">
+			<div class="caption">
+			<div class="about name">Restaurant Info!!</div>
+			<div class="about location">Name: <span id="name1" class="name1">Yangis</span></div>
+			<div class="about rating">Location: Buea this this that</div>
+			<span>Rating: 4 stars</span>
+			<div class="button"><button class="rate" type="submit" id="rest1">Rate</button></div>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="rest1">
+			<img src="Hydrangeas.jpg">
+			<div class="caption">
+			<div class="about name">Restaurant Info!!</div>
+			<div class="about location">Name: <span class="name1">Gomis</span></div>
+			<div class="about rating">Location: Buea this this that</div>
+			<span>Rating: 4 stars</span>
+			<div class="button"><button>Rate</button></div>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="rest1">
+			<img src="Hydrangeas.jpg">
+			<div class="caption">
+			<div class="about name">Restaurant Info!!</div>
+			<div class="about location">Name: FOOT PRINT</div>
+			<div class="about rating">Location: Buea this this that</div>
+			<span>Rating: 4 stars</span>
+			<div class="button"><button>Rate</button></div>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="rest1">
+			<img src="Hydrangeas.jpg">
+			<div class="caption">
+			<div class="about name">Restaurant Info!!</div>
+			<div class="about location">Name: FOOT PRINT</div>
+			<div class="about rating">Location: Buea this this that</div>
+			<span>Rating: 4 stars</span>
+			<div class="button"><button>Rate</button></div>
+			</div>
+		</div>
+	</div>
+	<footer></footer>
+	<!--this is for the modal html-->
+	<div class="modal">
+		<div class="modal-content">
+			<span class="closs-button">&times;</span>
+			<h1 class="modalHeader"></h1>
+			<p style="font-size: 10px; margin-top: -15px; background-color: #323C0A;"><div style="background-color: inherit;">Located at this this</div>You can select your rating below &#9759 &#9759 &#9759</p>
+			
+			<form style="background-color: inherit;" method="post" action="/ratings">
+			<div class="firstset">
+			<input type="radio" name="rating" value="5 stars">5 Stars<span class="stars" style="color: gold; background-color: inherit;">&starf;&starf;&starf;&starf;&starf;</span>
+			<input type="radio" name="rating" value="4 stars">4 Stars<span class="stars" style="color: gold; background-color: inherit;">&starf;&starf;&starf;&starf;</span>
+			<input type="radio" name="rating" value="3 stars">3 Stars<span class="stars" style="color: gold; background-color: inherit;">&starf;&starf;&starf;</span>
+			</div><br>
+			<div class="secondset">
+			<input type="radio" name="rating" value="2 stars">2 Stars<span class="stars" style="color: gold; background-color: inherit; padding-right: 40px;">&starf;&starf;</span>
+			<input type="radio" name="rating" value="1 stars">1 Stars<span class="stars" style="color: gold; background-color: inherit; padding-right: 40px;">&starf;</span>
+			<input type="radio" name="rating" value="-1 stars">-1 Stars<span class="stars" style="color:red; background-color: inherit;">&starf;</span>
+			</div>
+			<button class="modal-button" ><input type="submit" name="subscribe" value="Done"  /></button>
+			</form>
+			
+			<!--<button class="modal-button">Done</button>-->
+		</div>
+	</div>
+
+
+	<!--This is for the modal-->
+	<script text="text/javascript" src="index.js">	
+	</script>
+	<script text="text/javascript">
+		$(document).ready(function(){
+			var value=$(".button")
+			var ame=$(".name1")
+			const amount=ame.length;
+			const names=[];
+			for(let j=0;j<amount;j++){
+					names.push(ame[j].innerHTML)
+			}
+			for(let i=0;i<value.length;i++){
+			$(value[i]).click(function(){
+				document.querySelector(".modalHeader").textContent=names[i];
+				console.log(value[i]);
+			})};
+		});
+	</script>
+</body>
+</html>
