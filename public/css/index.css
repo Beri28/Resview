@@ -1,7 +1,11 @@
-*{
-	/*background-color: #FEF6EE;*/
-	background-color: white;
+body{
+	background-size: cover;
+	height: 100vh;
+	
 	color: #445B1E;
+}
+.overlay{
+	/*background-image:url(Hydrangeas.jpg);*/
 }
 header{
 	margin-top: 0px;
