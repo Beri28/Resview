@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/modal.css">
+    <script src="./javascript/jquery-3.6.0.min.js" ></script>
+    <script src="./javascript/douala.js"></script>
+</head>
+<body>
+	<header><h3 class="h3">Resview</h3></header>
+	<nav class="navbar">
+		<a href="index.html"class="">Home</a>
+		<a href="#" class="active">Douala</a>
+		<a href="#">Limbe</a>
+		<a href="yaounde.html">Yaounde</a>
+		<a href="/bafoussam">Bafoussam</a>
+		<a href="/bamenda">Bamenda</a>
+		<a href="/buea">Buea</a>
+	</nav>
+    <div class="post_body">
+	</div>
+
+    <div class="modal">
+		<div class="modal-content">
+			<span class="closs-button">&times;</span>
+			<h1 class="modalHeader"></h1>
+			<p style="font-size: 10px; margin-top: -15px; background-color: #323C0A;"><div style="background-color: inherit;">Located at this this</div>You can select your rating below &#9759 &#9759 &#9759</p>
+			
+			<form style="background-color: inherit;" method="post" action="/test">
+				<label><input type="text" name="Restaurant_name" value="" class="Restaurant_name"></label><!--Removed the class Restaurant_name from the input tag-->
+				<label><input type="text" name="Location_one" value="" class="Location_one"></label>
+				<div class="firstset">
+			<input type="radio" name="rating" value="5 stars">5 Stars<span class="stars" style="color: gold; background-color: inherit;">&starf;&starf;&starf;&starf;&starf;</span>
+			<input type="radio" name="rating" value="4 stars">4 Stars<span class="stars" style="color: gold; background-color: inherit;">&starf;&starf;&starf;&starf;</span>
+			<input type="radio" name="rating" value="3 stars">3 Stars<span class="stars" style="color: gold; background-color: inherit;">&starf;&starf;&starf;</span>
+			</div><br>
+			<div class="secondset">
+			<input type="radio" name="rating" value="2 stars">2 Stars<span class="stars" style="color: gold; background-color: inherit; padding-right: 40px;">&starf;&starf;</span>
+			<input type="radio" name="rating" value="1 stars">1 Stars<span class="stars" style="color: gold; background-color: inherit; padding-right: 40px;">&starf;</span>
+			<input type="radio" name="rating" value="-1 stars">-1 Stars<span class="stars" style="color:red; background-color: inherit;">&starf;</span>
+			</div>
+			<!--<button class="modal-button" ></button>-->
+				<input type="submit" name="subscribe" value="Done"  />
+			</form>
+			
+			<!--<button class="modal-button">Done</button>-->
+		</div>
+	</div>
+	
+</body>
+</html>
