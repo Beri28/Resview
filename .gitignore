@@ -1,2 +1,2 @@
-node_modules/*
-public/progressbar1
+//what to ignore
+node_modules

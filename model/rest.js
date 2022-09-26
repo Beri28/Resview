@@ -14,4 +14,4 @@ const restaurant=new mongoose.Schema({
         oneStar:{type:Number,default:0,},
         negOneStar:{type:Number,default:0,}
 })
-module.exports=mongoose.model('restaurant',restaurant)
+module.exports=mongoose.model('restaurants',restaurant)

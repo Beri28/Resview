@@ -1,0 +1,36 @@
+{{>search}}
+{{>navabar}}
+ <link rel="stylesheet" type="text/css" href="./css/for_render.css">
+    <link rel="stylesheet" type="text/css" href="./css/modal.css">
+    <script src="./javascript/jquery-3.6.0.min.js" ></script>
+    <script src="./javascript/yaounde2.js"></script>
+<div class="post_body">
+	</div>
+
+
+	<div class="modal1">
+		<div class="modal1-content">
+			<span class="closs1-button">&times;</span>
+			<h1 class="modalHeader1"></h1>
+			<p style="font-size: 10px; margin-top: -15px; background-color: #323C0A;"><div style="background-color: inherit;">Located at this this</div>You can select your rating below &#9759 &#9759 &#9759</p>
+			
+			<form style="background-color: inherit;" method="post" action="/test">
+				<label>Name: <input type="text" name="Restaurant_name" value="" class="Restaurant_name"></label><!--Removed the class Restaurant_name from the input tag-->
+				<label>Location :<input type="text" name="Location_one" value="" class="Location_one"></label><hr>
+				<div class="firstset">
+			<input type="radio" name="rating" value="5 stars">5 Stars<span class="stars" style="color: gold; background-color: inherit;">&starf;&starf;&starf;&starf;&starf;</span>
+			<input type="radio" name="rating" value="4 stars">4 Stars<span class="stars" style="color: gold; background-color: inherit;">&starf;&starf;&starf;&starf;</span>
+			<input type="radio" name="rating" value="3 stars">3 Stars<span class="stars" style="color: gold; background-color: inherit;">&starf;&starf;&starf;</span>
+			</div><br>
+			<div class="secondset">
+			<input type="radio" name="rating" value="2 stars">2 Stars<span class="stars" style="color: gold; background-color: inherit; padding-right: 40px;">&starf;&starf;</span>
+			<input type="radio" name="rating" value="1 stars">1 Stars<span class="stars" style="color: gold; background-color: inherit; padding-right: 40px;">&starf;</span>
+			<input type="radio" name="rating" value="-1 stars">-1 Stars<span class="stars" style="color:red; background-color: inherit;">&starf;</span>
+			</div>
+			<button class="modal1-button" action="submit" >Rate</button>
+				<!--input type="submit" name="subscribe" value="Done"  /-->
+			</form>
+			
+			<!--<button class="modal-button">Done</button>-->
+		</div>
+	</div>

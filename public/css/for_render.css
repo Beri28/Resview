@@ -1,0 +1,55 @@
+body{
+	height: 100vh;
+}
+
+.name{
+	font-weight: bold;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	letter-spacing: 2px;
+}
+img{
+	border: 3px solid#1A2239;
+	border-radius: 25%;
+}
+
+
+
+.rest1{
+	clear: left;
+	margin-left: 21px;
+	width: 85%;
+	height: 20%;
+
+}
+.main img{
+	border: 3px solid#1A2239;
+	border-radius: 25%;
+	width: 15%;
+	margin-top: 25px;
+}
+.caption{
+	/*font-family: serif;*/
+	margin-top: 22px;
+	float: right;
+	width: 81%;
+	height: 55%;
+	font-size: 1.5vw;/*this property makes the text reponsive*/
+}
+.button1{
+	float: right;
+	margin-top: -15px;
+    padding-right: 65px;
+	/*width: 29%;*/
+}
+button{
+	border:3px solid #C4CAC6;
+	font-weight: bold;
+	padding: 5px 15px 5px 15px;
+	background-color:#1A2239;
+	color: white;
+	font-size: 1.2vw;
+}
+button:hover{
+	background-color: green;
+}
+
