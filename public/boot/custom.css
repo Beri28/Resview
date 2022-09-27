@@ -1,0 +1,26 @@
+.qwe{
+   /* background-color: rgb(26, 30, 57); 
+   justify-content: flex-end;*/
+    margin-top: 55px;
+
+}
+.dd2{
+   color: white;
+   margin-left: -1px;
+}
+.h3{
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.beri{
+    background-color: rgba(159, 176, 192, 0.918);
+    color: white;
+}
+.new{
+    margin-top: 7px;
+}
+.ber{
+    background-color:rgba(159, 176, 192, 0.158) ;
+}

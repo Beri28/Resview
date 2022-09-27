@@ -1,0 +1,101 @@
+{{>search}}
+{{>navabar}}
+
+<link rel="stylesheet" type="text/css" href="./css/for_render.css">
+    <link rel="stylesheet" type="text/css" href="./css/modal.css">
+    <script src="./javascript/jquery-3.6.0.min.js" ></script>
+    <script src="./javascript/search_results.js"></script>
+	<h3>Here are the results</h3>
+		{{#each item1}}
+				
+		<p>
+		<div class="main">
+		<div class="rest1">
+		<img src="./images/image1.jpg" width="100%" height="100%">
+			<div class="caption">
+				<div class="about name">Restaurant Info!!</div>
+				<div class="about location">Name: <span id="name1" class="name1">{{#each this}}{{this.restaurantName}}{{/each}}</span> </div>
+				<div class="about rating">Location: <span class="location2">{{#each this}}{{this.locationOne}}{{/each}}</span>{{#each this}} {{this.locationTwo}} {{/each}}</div>
+				<span class="stars">Rating: {{#each this}}{{this.rating}}{{/each}}<span class="stars2" style="color: black ; font-weight:bolder"> stars</span></span>
+				<div class="button1"><button>Rate</button>   <button> More</button></div>
+			</div>
+			
+				
+				
+		</div>
+	</div>
+	</p>
+	    
+	{{/each}}
+<div class="post_body">
+</div>
+	
+
+
+	<div class="modal1">
+		<div class="modal1-content">
+			<span class="closs1-button">&times;</span>
+			<h1 class="modalHeader1"></h1>
+			<p style="font-size: 10px; margin-top: -15px; background-color: #323C0A;"><div style="background-color: inherit;">Located at this this</div>You can select your rating below &#9759 &#9759 &#9759</p>
+			
+			<form style="background-color: inherit;" method="post" action="/test">
+				<label>Name: <input type="text" name="Restaurant_name" value="" class="Restaurant_name"></label><!--Removed the class Restaurant_name from the input tag-->
+				<label>Location :<input type="text" name="Location_one" value="" class="Location_one"></label><hr>
+				<div class="firstset">
+			<input type="radio" name="rating" value="5 stars">5 Stars<span class="stars" style="color: gold; background-color: inherit;">&starf;&starf;&starf;&starf;&starf;</span>
+			<input type="radio" name="rating" value="4 stars">4 Stars<span class="stars" style="color: gold; background-color: inherit;">&starf;&starf;&starf;&starf;</span>
+			<input type="radio" name="rating" value="3 stars">3 Stars<span class="stars" style="color: gold; background-color: inherit;">&starf;&starf;&starf;</span>
+			</div><br>
+			<div class="secondset">
+			<input type="radio" name="rating" value="2 stars">2 Stars<span class="stars" style="color: gold; background-color: inherit; padding-right: 40px;">&starf;&starf;</span>
+			<input type="radio" name="rating" value="1 stars">1 Stars<span class="stars" style="color: gold; background-color: inherit; padding-right: 40px;">&starf;</span>
+			<input type="radio" name="rating" value="-1 stars">-1 Stars<span class="stars" style="color:red; background-color: inherit;">&starf;</span>
+			</div>
+			<button class="modal1-button" action="submit" >Rate</button>
+				<!--input type="submit" name="subscribe" value="Done"  /-->
+			</form>
+			
+			<!--<button class="modal-button">Done</button>-->
+		</div>
+	</div>
+	<!--<script>
+		const d=document.getElementsByClassName('button1');
+	const modal=document.querySelector(".modal1");
+	const clossButton=document.querySelector(".closs1-button");
+		function toggleModal(){
+			modal.classList.toggle("show-modal1");
+		}
+		function windowOnClick(event){
+			if(event.target===modal){
+				toggleModal();
+			}
+		}
+	console.log(d[2])
+		for(let i=0;i<d.length;i++){
+			d[i].addEventListener('click',toggleModal)
+		}
+		clossButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
+		
+$(document).ready(function(){
+	var value=$(".button1")
+	var ame=$(".name1")
+	var location2=$('.location2')
+	console.log(location2[0])
+	const amount=ame.length;
+	const names=[];
+	const adress=[]
+	for(let j=0;j<amount;j++){
+			names.push(ame[j].innerHTML)
+			adress.push(location2[j].innerHTML)
+	}
+	for(let i=0;i<value.length;i++){
+	$(value[i]).click(function(){
+		document.querySelector(".Restaurant_name").value=names[i].toLowerCase();
+		document.querySelector(".Location_one").value=adress[i].toLowerCase();
+		document.querySelector(".modalHeader1").textContent=names[i];
+		console.log(value[i]);
+	})};
+	});
+
+	</script>-->

@@ -1,0 +1,39 @@
+.divone{
+	font-size: 1.5vw;
+	clear: left;
+	margin-left: 20px;
+}
+.img{
+	float: left;
+	width: 12%;
+	height: 12%;
+}
+.divCap{
+	float: left;
+	padding-left: 35px;
+}
+.divButton{
+	float: left;
+	padding-left: 100px;
+}
+.name{
+	font-weight: bold;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	letter-spacing: 2px;
+}
+img{
+	border: 3px solid#1A2239;
+	border-radius: 25%;
+}
+
+button{
+	border:3px solid #C4CAC6;
+	font-weight: bold;
+	padding: 5px 15px 5px 15px;
+	background-color:#1A2239;
+	color: white;
+	font-size: 1.2vw;
+}
+button:hover{
+	background-color: green;
+}

@@ -1,4 +1,4 @@
-.modal{
+.modal1{
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -11,7 +11,7 @@
 	transition: visibilty 0s linear 0.25s,opacity 0.25s 0s, transform 0.25s;
 
 }
-.modal-content{
+.modal1-content{
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -19,11 +19,11 @@
 	/*background-color:#F1DEAA;*/
 	background-color: #CBB57A;
 	padding: 1rem 1.5rem;
-	width: 30rem;
-	height: 20rem;
+	width: 35rem;
+	height: 25rem;
 	border-radius: 0.5rem;
 }
-.close-button{
+.close1-button{
 	float: right;
 	width: 1.5rem;
 	line-height: 1.5rem;
@@ -33,10 +33,10 @@
 	background-color: lightgray;
 
 }
-.close-button:hover{
+.close1-button:hover{
 	background-color: darkgray;
 }
-.show-modal{
+.show-modal1{
 	opacity: 1;
 	visibility: visible;
 	transform: scale(1.0);
@@ -48,10 +48,10 @@
 .secondset{
 	background-color: inherit;
 }
-.modalHeader{
+.modalHeader1{
 	background-color:#CBB57A;
 }
-.modal-button{
+.modal1-button{
 	size: 15px;
 	font-weight: bold;
 	margin-top: 15px;
