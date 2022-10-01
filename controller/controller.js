@@ -65,12 +65,12 @@ const rate=async (req,res,next)=>{
         }
         //this code below is for the calculation
        // var calculation1=async(req,res,next)=>{
-       var five=await restaurant.findOne({$or:[{restaurantName:req.body.Restaurant_name.trim()},{locationOne:req.body.Location_one.trim()}]},{fiveStar:1,_id:0}) 
-       var four=await restaurant.findOne({$or:[{restaurantName:req.body.Restaurant_name.trim()},{locationOne:req.body.Location_one.trim()}]},{fourStar:1,_id:0})
-        var three=await restaurant.findOne({$or:[{restaurantName:req.body.Restaurant_name.trim()},{locationOne:req.body.Location_one.trim()}]},{threeStar:1,_id:0})
-        var two=await restaurant.findOne({$or:[{restaurantName:req.body.Restaurant_name.trim()},{locationOne:req.body.Location_one.trim()}]},{twoStar:1,_id:0})
-        var one=await restaurant.findOne({$or:[{restaurantName:req.body.Restaurant_name.trim()},{locationOne:req.body.Location_one.trim()}]},{oneStar:1,_id:0}) 
-        var negOne=await restaurant.findOne({$or:[{restaurantName:req.body.Restaurant_name.trim()},{locationOne:req.body.Location_one.trim()}]},{negOneStar:1,_id:0})
+       var five=await restaurant.findOne({$and:[{restaurantName:req.body.Restaurant_name.trim()},{locationOne:req.body.Location_one.trim()}]},{fiveStar:1,_id:0}) 
+       var four=await restaurant.findOne({$and:[{restaurantName:req.body.Restaurant_name.trim()},{locationOne:req.body.Location_one.trim()}]},{fourStar:1,_id:0})
+        var three=await restaurant.findOne({$and:[{restaurantName:req.body.Restaurant_name.trim()},{locationOne:req.body.Location_one.trim()}]},{threeStar:1,_id:0})
+        var two=await restaurant.findOne({$and:[{restaurantName:req.body.Restaurant_name.trim()},{locationOne:req.body.Location_one.trim()}]},{twoStar:1,_id:0})
+        var one=await restaurant.findOne({$and:[{restaurantName:req.body.Restaurant_name.trim()},{locationOne:req.body.Location_one.trim()}]},{oneStar:1,_id:0}) 
+        var negOne=await restaurant.findOne({$and:[{restaurantName:req.body.Restaurant_name.trim()},{locationOne:req.body.Location_one.trim()}]},{negOneStar:1,_id:0})
         console.log(five)
         five=five.fiveStar;
         four=four.fourStar;
@@ -114,7 +114,7 @@ const rate=async (req,res,next)=>{
             }
            }
            updateRating(req,res,next)*/
-        res.send("updated")
+        res.send("<h3>Thanks, succesfully updated</h3>")
     }
 }
 
