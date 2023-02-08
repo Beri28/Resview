@@ -1,6 +1,5 @@
 -👋 Hi, I’m @Beri28
-- 👀 I’m interested in software development
-- 🌱 I’m currently learning c++,javascript,nodejs
+- 👀 I’m a software engineering student
 - 
 - 💞️ I’m looking to collaborate on software and innovative projects
 - 📫 How to reach me cletusberinyuy@gmail.com
